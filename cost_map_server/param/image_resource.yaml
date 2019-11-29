@@ -1,0 +1,14 @@
+# frame in the world that this map is attached to
+frame_id: map
+# co-ordinates of the centre of the map relative to the frame_id
+centre_x: 1.5
+centre_y: 1
+# dimensional properties of the map
+resolution: 0.01
+number_of_cells_x: 300
+number_of_cells_y: 200
+# data layers
+layers:
+  - layer_name: static_layer
+    layer_data: eurobot_2019_field_200x300.png
+    

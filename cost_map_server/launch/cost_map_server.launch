@@ -1,0 +1,33 @@
+<launch>
+  <arg name="log_output" default="log" /> 
+  <node pkg="cost_map_server" 
+    name="cost_map_server" 
+    type="cost_map_server" 
+    required="true" 
+    clear_params="true" 
+    output="$(arg log_output)" 
+    args="$(find cost_map_server)/param/image_resource.yaml">
+ </node>
+</launch>
+
+<!-- test obstacle publish -->
+<!-- 
+rostopic pub /big_robot/aruco geometry_msgs/PoseStamped "header:
+  seq: 0
+  stamp:
+    secs: 0
+    nsecs: 0
+  frame_id: 'map'
+pose:
+  position:
+    x: 0.5
+    y: 1.1
+    z: 0.0
+  orientation:
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0" -r 10
+
+
+ -->

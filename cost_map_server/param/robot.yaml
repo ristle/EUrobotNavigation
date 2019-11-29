@@ -1,0 +1,16 @@
+###########################
+# cost_map_server params ##
+###########################
+cost_map_server/big_robot_size: 0.4
+cost_map_server/little_robot_size: 0.4
+cost_map_server/cube_size: 0.11
+cost_map_server/inscribed_radius: 0.25
+cost_map_server/inflation_radius: 0.25
+cost_map_server/inflation_exponential_rate: 0.6
+cost_map_server/big_robot1: "/aruco/robot1"
+cost_map_server/big_robot2: "/aruco/robot2"
+cost_map_server/small_robot1: "/aruco/robot3" 
+cost_map_server/small_robot2: "/aruco/robot4"
+cost_map_server/collision: "collision"
+cost_map_server/image_resource_name: "$(find cost_map_server)/param/image_resource.yaml"
+cost_map_server/min_diff_points: 0.01
