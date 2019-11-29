@@ -1,0 +1,6 @@
+grid_map_server/big_robot1 : 0.4
+grid_map_server/big_robot2 : 0.4
+grid_map_server/small_robot1 : 0.4
+grid_map_server/small_robot2 : 0.4
+local_planner/radius : 0.15
+global_planner/frame_id : "map" 

@@ -1,0 +1,32 @@
+
+# small robot debug param list
+robot_id: "small"
+
+###########################
+# cost_map_server params ##
+###########################
+cost_map_server/big_robot_size: 0.45
+cost_map_server/little_robot_size: 0.45
+cost_map_server/cube_size: 0.11
+cost_map_server/inscribed_radius: 0.3
+cost_map_server/inflation_radius: 0.3
+cost_map_server/inflation_exponential_rate: 0.6
+cost_map_server/big_robot1: "/aruco/big_robot"
+cost_map_server/big_robot2: "/aruco/enemy_robot1"
+cost_map_server/small_robot1: "null" 
+cost_map_server/small_robot2: "/aruco/enemy_robot2"
+cost_map_server/collision: "collision"
+cost_map_server/image_resource_name: "$(find cost_map_server)/param/image_resource.yaml"
+cost_map_server/min_diff_points: 0.01
+
+###########################
+### path_planner params ###
+###########################
+global_planner/path_layer: "inflation_layer"
+global_planner/path_force_layer: "obstacle_inflation_layer"
+global_planner/frame_id: "map"
+global_planner/current_position: "real_corr"
+global_planner/path_filter_epsilon: 0.05
+global_planner/euristic_grid_cost: 3.1
+global_planner/algorithm: "ThetaStar" #  {"ThetaStar", "AStar", "develop"}
+

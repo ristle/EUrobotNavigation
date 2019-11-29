@@ -1,0 +1,6 @@
+std_msgs/Bool obstacle
+std_msgs/Float64 speed
+std_msgs/Float64 acceleration
+std_msgs/Float64 braking
+---
+

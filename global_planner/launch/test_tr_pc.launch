@@ -1,0 +1,28 @@
+<launch>
+  <rosparam command="load" file="$(find robot_bringup)/param/robot.yaml" />
+  <!-- COST MAP SERVER -->
+  <node pkg="cost_map_server"
+      name="cost_map_server"
+      type="cost_map_server"
+      args="$(find cost_map_server)/param/image_resource.yaml">
+  </node>
+   <!-- PATH PLANNING -->
+   <node pkg="global_planner" 
+        type="global_planner" 
+        name="global_planner"> 
+  </node>
+   <!--     MOVER      -->
+   <node pkg="global_planner" 
+        type="mover" 
+        name="mover"> 
+  </node>
+   <!-- test trajectory -->
+   <node pkg="global_planner" 
+        type="test.py" 
+        name="test"> 
+  </node>
+  <!-- ROS STM BRIDGE -->
+  <node pkg="ros_stm_bridge" type="ros_stm_bridge" name="ros_stm_bridge" />
+
+
+</launch>

@@ -1,0 +1,5 @@
+ls
+ls | sort-by modified
+ls / | sort-by modified
+ls | where Directory
+ls | where type == Directory

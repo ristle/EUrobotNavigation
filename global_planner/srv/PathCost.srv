@@ -1,0 +1,5 @@
+geometry_msgs/PoseStamped start_point
+geometry_msgs/PoseStamped goal_point
+std_msgs/Bool with_static
+---
+std_msgs/Float64 path_len

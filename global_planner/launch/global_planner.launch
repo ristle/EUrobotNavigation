@@ -1,0 +1,25 @@
+<launch>
+  <arg name="log_output" default="log" />
+  <node pkg="global_planner" type="global_planner" name="global_planner" required="true" clear_params="true" output="$(arg log_output)">
+  </node>
+</launch>
+
+<!-- test goal publish -->
+<!-- 
+rostopic pub /gp/goal geometry_msgs/PoseStamped "header:
+  seq: 0
+  stamp:
+    secs: 0
+    nsecs: 0
+  frame_id: 'map'
+pose:
+  position:
+    x: 1.0
+    y: 1.5
+    z: 0.0
+  orientation:
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0" -r 10 
+-->

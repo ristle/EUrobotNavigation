@@ -1,0 +1,33 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/pazuzu/catkin_ws/devel/include",
+                "/opt/ros/kinetic/include",
+                "/home/pazuzu/catkin_ws/src/eurobot_2019/communication2/include",
+                "/home/pazuzu/catkin_ws/src/presentation/cost_map_presentation/include",
+                "/home/pazuzu/catkin_ws/src/eurobot_2019/cost_map_server/include",
+                "/home/pazuzu/catkin_ws/src/traffic_detection/detect/include",
+                "/home/pazuzu/catkin_ws/src/eurobot_2019/planner/global_planner/include",
+                "/home/pazuzu/catkin_ws/src/eurobot_2019/planner/local_planner/include",
+                "/home/pazuzu/catkin_ws/src/eurobot_2019/ocam_usb_cam/include",
+                "/home/pazuzu/catkin_ws/src/ocams/include",
+                "/home/pazuzu/catkin_ws/src/presentation/pattern/include",
+                "/home/pazuzu/catkin_ws/src/traffic_detection/reciever/include",
+                "/home/pazuzu/catkin_ws/src/Traffic-Sign-Recognition-for-Autonomous-Cars/include",
+                "/home/pazuzu/catkin_ws/src/eurobot_2019/planner/trajectory_regulator/include",
+                "/usr/include"
+            ],
+            "name": "Linux",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,63 @@
+{
+    // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
+    // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
+    // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "path_planning",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/home/pazuzu/catkin_ws/devel/lib/path_planning/path_planner",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "/home/pazuzu/catkin_ws/devel/lib/path_planning",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },{
+            "name": "trajectory_regulator",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/home/pazuzu/catkin_ws/devel/lib/path_planning/trajectory_regulator",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "/home/pazuzu/catkin_ws/devel/lib/trajectory_regulator",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },{
+            "name": "local_planner",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/home/pazuzu/catkin_ws/devel/lib/local_planning/local_planner",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "/home/pazuzu/catkin_ws/devel/lib/local_planning",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
