@@ -7,7 +7,6 @@
 #include <geometry_msgs/PoseWithCovarianceStamped.h>
 #include <grid_map_ros/grid_map_ros.hpp>
 #include <math.h>
-#include <nav_msgs/OccupancyGrid.h>
 #include <nav_msgs/Odometry.h>
 #include <nav_msgs/Path.h>
 #include <omp.h>
@@ -15,7 +14,6 @@
 #include <tf/transform_datatypes.h>
 #include <true_modulo.h>
 
-#include "lineiteratorOccypancy.hpp"
 #include <PlannerTrajectory.hpp>
 
 struct PathPlannerParams {
